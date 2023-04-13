@@ -18,15 +18,15 @@
 ---
 
 ## Запуск тестов
-Для работы с тестами необходимо установить драйвер браузера **chromedriver.exe**, который можно скачать по ссылке https://chromedriver.chromium.org/downloads. Файл поместить в корневую папку tensor. В файле conftest.py прописать расположение файла в параметре executable_path, например executable_path=r"C:\chromedriver.exe").
-Запуск тестов производится командой pytest <путь к файлу, содержащему тесты>:
+Для работы с тестами необходимо установить драйвер браузера `chromedriver.exe`, который можно скачать по ссылке https://chromedriver.chromium.org/downloads. Файл поместить в корневую папку `tensor`. В файле `conftest.py` прописать расположение файла в параметре `executable_path`, например **executable_path=r"C:\chromedriver.exe"**.
+Запуск тестов производится командой `pytest <путь к файлу, содержащему тесты>`:
 
-1) pytest tests/test_yandex_search.py - тест поисковой строки
-2) pytest tests/test_yandex_pictures.py - тест Яндекс-картинок
+1) `pytest tests/test_yandex_search.py` - тест поисковой строки
+2) `pytest tests/test_yandex_pictures.py` - тест Яндекс-картинок
 
 ---
 
 ## Получение отчетов
-Для формирования отчетов используется библиотека allure-pytest.
-Чтобы создать отчет, запустите тест с параметром **--alluredir=<путь к директории с отчетами>**.
-Например, pytest --alluredir=reports/ tests/test_yandex_search.py. По завершению тестов в папку reports будут помщены отчеты в формате json.
+Для формирования отчетов используется библиотека `allure-pytest`.
+Чтобы создать отчет, запустите тест с параметром `--alluredir=<путь к директории с отчетами>`.
+Например, **pytest --alluredir=reports/ tests/test_yandex_search.py**. По завершению тестов в папку reports будут помщены отчеты в формате json.
