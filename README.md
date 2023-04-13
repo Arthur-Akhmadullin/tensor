@@ -18,7 +18,7 @@
 ---
 
 ## Запуск тестов
-Для работы с тестами необходимо установить драйвер браузера `chromedriver.exe`, который можно скачать по ссылке https://chromedriver.chromium.org/downloads. Файл поместить в корневую папку `tensor`. В файле `conftest.py` прописать расположение файла в параметре `executable_path`, например **executable_path=r"C:\chromedriver.exe"**.
+Для работы с тестами необходимо установить драйвер браузера `chromedriver.exe`, который можно скачать по ссылке https://chromedriver.chromium.org/downloads. Файл поместить в корневую папку `tensor`. В файле `conftest.py` прописать расположение файла в параметре `executable_path`, например **executable_path=r"C:\tensor\chromedriver.exe"**.
 Запуск тестов производится командой `pytest <путь к файлу, содержащему тесты>`:
 
 1) `pytest tests/test_yandex_search.py` - тест поисковой строки
