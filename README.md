@@ -29,4 +29,4 @@
 ## Получение отчетов
 Для формирования отчетов используется библиотека `allure-pytest`.
 Чтобы создать отчет, запустите тест с параметром `--alluredir=<путь к директории с отчетами>`.
-Например, **pytest --alluredir=reports/ tests/test_yandex_search.py**. По завершению тестов в папку reports будут помщены отчеты в формате json.
+Например, **pytest --alluredir=reports/ tests/test_yandex_search.py**. По завершении тестов в папку reports будут помещены отчеты в формате json.
